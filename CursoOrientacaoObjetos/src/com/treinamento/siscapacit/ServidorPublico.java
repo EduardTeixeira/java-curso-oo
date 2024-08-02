@@ -1,19 +1,22 @@
-package classes;
+package com.treinamento.siscapacit;
+
+import classes.Avaliacao;
 
 public class ServidorPublico {
 
   private int matricula;
   private String nome;
-  private String foto;
   private String orgao;
-  private String vinculo;
-  private double salario;
-  private int idade;
-  private int tempoContribuicao;
   private String cargo;
   private String lotacao;
-  private String exercicio;
   private String email;
+  private double salario;
+
+  private String foto;
+  private String vinculo;
+  private int idade;
+  private int tempoContribuicao;
+  private String exercicio;
   private String telefone;
   private String celular;
   private String cpf;
@@ -23,10 +26,30 @@ public class ServidorPublico {
   public ServidorPublico() {
   }
 
+  public ServidorPublico(int matricula, String nome, String orgao, String cargo, String lotacao, String email,
+      double salario) {
+    this.matricula = matricula;
+    this.nome = nome;
+    this.orgao = orgao;
+    this.cargo = cargo;
+    this.lotacao = lotacao;
+    this.email = email;
+    this.salario = salario;
+  }
+
   public ServidorPublico(int matricula, String nome, String cargo) {
     this.matricula = matricula;
     this.nome = nome;
     this.cargo = cargo;
+  }
+
+  @Override
+  public String toString() {
+    return "ServidorPublico [matricula=" + matricula + ", nome=" + nome + ", orgao=" + orgao + ", cargo=" + cargo
+        + ", lotacao=" + lotacao + ", email=" + email + ", salario=" + salario + ", foto=" + foto + ", vinculo="
+        + vinculo + ", idade=" + idade + ", tempoContribuicao=" + tempoContribuicao + ", exercicio=" + exercicio
+        + ", telefone=" + telefone + ", celular=" + celular + ", cpf=" + cpf + ", naturalidade=" + naturalidade
+        + ", avaliacao=" + avaliacao + "]";
   }
 
   public static void main(String[] args) {
@@ -198,7 +221,5 @@ public class ServidorPublico {
   public void setAvaliacao(Avaliacao avaliacao) {
     this.avaliacao = avaliacao;
   }
-
-  
 
 }
