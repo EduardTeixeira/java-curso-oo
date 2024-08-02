@@ -43,6 +43,19 @@ public class App {
     System.out.println("Telefone do servidor publico");
     System.out.println(servidorPublico.getTelefones());
 
+    Estatutario estatutario = new Estatutario(1055, "Isabela", "Analista Sistemas", 2, 9730);
+    System.out.println(estatutario.toString());
+
+    Comissionado comissionado = new Comissionado(1055, "Alberto", "Analista Testes", 1, 9739);
+    System.out.println(comissionado.toString());
+    System.out.println(comissionado.getSalario());
+
+    Temporario temporario = new Temporario(1055, "Luisa", "Analista JR", "1", 9739);
+    System.out.println(temporario.toString());
+    System.out.println(temporario.getMatricula());
+    System.out.println(temporario.nome);
+    System.out.println(temporario.getContrato());
+
   }
 
 }

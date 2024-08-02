@@ -1,6 +1,5 @@
 package com.unidade4;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import classes.Avaliacao;
@@ -8,7 +7,7 @@ import classes.Avaliacao;
 public class ServidorPublico {
 
   private int matricula;
-  private String nome;
+  protected String nome;
   private String orgao;
   private String cargo;
   private String lotacao;
