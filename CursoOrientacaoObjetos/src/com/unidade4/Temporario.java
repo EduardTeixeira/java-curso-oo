@@ -41,4 +41,13 @@ public class Temporario extends ServidorPublico {
         + ", getNome()=" + getNome() + ", getCargo()=" + getCargo() + "]";
   }
 
+  public double calcularSalarioHorasExtras(int horasTrabalhadas) {
+
+    double salarioMensal = 0;
+
+    salarioMensal = salarioMensal + horasTrabalhadas * 20;
+
+    return (this.salario + salarioMensal);
+  }
+
 }

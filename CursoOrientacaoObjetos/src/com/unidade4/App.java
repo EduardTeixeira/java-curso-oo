@@ -50,11 +50,13 @@ public class App {
     System.out.println(comissionado.toString());
     System.out.println(comissionado.getSalario());
 
-    Temporario temporario = new Temporario(1055, "Luisa", "Analista JR", "1", 9739);
+    Temporario temporario = new Temporario(1055, "Luisa", "Analista JR", "1", 3000);
     System.out.println(temporario.toString());
     System.out.println(temporario.getMatricula());
     System.out.println(temporario.nome);
     System.out.println(temporario.getContrato());
+    System.out.println(temporario.calcularSalarioHorasExtras(20)); // Classe - this - Sobrecarga
+    System.out.println(temporario.calcularSalarioHorasExtras(10, 20)); // SuperClasse - super - Herança
 
   }
 
