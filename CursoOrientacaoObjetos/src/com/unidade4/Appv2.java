@@ -8,12 +8,15 @@ public class Appv2 {
 
     verificarTipoServidorPublico(isabela);
 
-    isabela = new Estatutario(1, "Isabela", "Analista", 1, 15000);
+    isabela = new Estatutario(1, "Isabela Silva", "Analista", 1, 15000);
 
     verificarTipoServidorPublico(isabela);
 
     System.out.println(isabela);
     System.out.println(((Estatutario) isabela).getTempoServico());
+
+    System.out.println("Classe Abstrata");
+    isabela.exibirInformacoes();
 
     ServidorPublico pedro = new Comissionado(2, "Pedro", "Analista Jr", 3000, 5000);
     System.out.println(pedro.calcularSalarioHorasExtras(40));
