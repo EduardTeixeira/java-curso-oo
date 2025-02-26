@@ -1,6 +1,6 @@
 package com.unidade4;
 
-public class Appv2 {
+public class Appv2 implements APIServidorPublico {
 
   public static void main(String[] args) {
 
@@ -15,12 +15,12 @@ public class Appv2 {
     System.out.println(isabela);
     System.out.println(((Estatutario) isabela).getTempoServico());
 
-    System.out.println("Classe Abstrata");
-    isabela.exibirInformacoes();
-
     ServidorPublico pedro = new Comissionado(2, "Pedro", "Analista Jr", 3000, 5000);
     System.out.println(pedro.calcularSalarioHorasExtras(40));
     System.out.println(pedro);
+
+    System.out.println("\nClasse Abstrata");
+    isabela.exibirInformacoes();
 
   }
 
@@ -34,6 +34,30 @@ public class Appv2 {
     } else {
       System.out.println("Não foi especializado, permanece servidor público.");
     }
+  }
+
+  @Override
+  public void adicionarServidorPublico() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'adicionarServidorPublico'");
+  }
+
+  @Override
+  public void listarServidoresPublicos() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'listarServidoresPublicos'");
+  }
+
+  @Override
+  public void listaServidorPublico(int matricula) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'listaServidorPublico'");
+  }
+
+  @Override
+  public void alterarServidorPublico(ServidorPublico servidorPublico) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'alterarServidorPublico'");
   }
 
 }
